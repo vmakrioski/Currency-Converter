@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="shortcut icon" href="currency-icon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Currency Converter</header>
+      <form action="#">
+        <div class="amount">
+          <p>Amount</p>
+          <input type="text" value="1" />
+        </div>
+        <div class="drop-list">
+          <div class="from">
+            <p>From</p>
+            <div class="select-box">
+              <img
+                src="https://flagcdn.com/48x36/eu.png"
+                alt="Flag"
+              />
+              <select></select>
+            </div>
+          </div>
+          <div class="icon"><i class="bi bi-arrow-left-right"></i></div>
+          <div class="to">
+            <p>To</p>
+            <div class="select-box">
+              <img
+                src="https://flagcdn.com/48x36/mk.png"
+                alt="Flag"
+              />
+              <select></select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange-rate">Converting...</div>
+        <button>Convert</button>
+      </form>
+    </div>
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
